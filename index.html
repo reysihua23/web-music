@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Rey App para Android: busca, descarga y reproduce música y videos. Descarga directa del APK.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#000000">
+<title>Rey App · Música y videos para Android</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="wall" aria-hidden="true"><div class="tilt"><div class="scroll" id="wall"></div></div></div>
+<div class="glow" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header>
+    <a class="brand" href="#top" aria-label="Rey App">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M3 24 6 9l7 7 3-10 3 10 7-7 3 15z" fill="#ffb02e"/></svg>
+      <span>Rey App</span>
+    </a>
+    <nav><a href="#funciones">Funciones</a><a href="#capturas">Capturas</a><a href="#faq">Preguntas</a><span class="chip">Android</span></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="copy">
+        <p class="kicker reveal">Nueva versión disponible</p>
+        <h1 id="title" aria-label="Rey App" data-text="Rey App"></h1>
+        <p class="lead reveal">Busca, descarga y reproduce tu música y videos. Todo en una sola app para <span id="rotator" class="rot">reinar en tu bolsillo</span>.</p>
+        <div class="cta reveal">
+          <a class="btn" id="dl" href="apks/app-release.apk" download>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+            Descargar APK
+          </a>
+          <a class="ghost" href="#capturas">Ver capturas</a>
+        </div>
+        <p class="meta reveal">v1.0.0 · 25 MB · Android 8+</p>
+      </div>
+
+      <div class="stage reveal" aria-hidden="true">
+        <div class="editor" id="editor">
+          <div class="bar"><i></i><i></i><i></i><span>rey-app</span></div>
+          <div class="code" id="typed"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="funciones">
+      <h2 class="reveal cm">Qué puedes hacer</h2>
+      <div class="feats">
+        <article class="feat reveal"><span class="num">01</span><h3>buscar()</h3><p>Encuentra música y videos con el buscador de la app.</p></article>
+        <article class="feat reveal"><span class="num">02</span><h3>descargar()</h3><p>Guarda lo que te gusta directo en tu teléfono.</p></article>
+        <article class="feat reveal"><span class="num">03</span><h3>reproducir()</h3><p>Escucha música y mira videos sin salir de Rey App.</p></article>
+      </div>
+    </section>
+
+    <section class="block" id="capturas">
+      <h2 class="reveal cm">Míralo por dentro</h2>
+      <div class="shots">
+        <figure class="reveal"><img src="images/imagen1.png" alt="Pantalla principal de Rey App" data-fallback="captura1.png"></figure>
+        <figure class="reveal"><img src="images/imagen2.png" alt="Buscar y descargar en Rey App" data-fallback="captura2.png"></figure>
+        <figure class="reveal"><img src="images/imagen3.png" alt="Reproducir música y videos en Rey App" data-fallback="captura3.png"></figure>
+      </div>
+      <p class="hint reveal">Toca una captura para verla en grande.</p>
+    </section>
+
+    <section class="block two">
+      <article class="card reveal">
+        <h2 class="cm">Verifica tu descarga</h2>
+        <p>Compara este código SHA-256 con el de tu archivo. Si no coincide, no lo instales.</p>
+        <div class="hash"><code id="hash">REEMPLAZA_CON_TU_SHA256</code><button id="copy" type="button">Copiar</button></div>
+      </article>
+      <article class="card reveal">
+        <h2 class="cm">Cómo instalarla</h2>
+        <div class="term">
+          <p><b>1</b> Descarga <u>rey-app.apk</u></p>
+          <p><b>2</b> Ábrelo y permite la instalación desde tu navegador</p>
+          <p><b>3</b> Instala y abre Rey App</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="block" id="faq">
+      <h2 class="reveal cm">Preguntas frecuentes</h2>
+      <div class="faq reveal">
+        <details><summary>¿Por qué no está en Play Store?</summary><p>Rey App se distribuye como APK desde esta página oficial.</p></details>
+        <details><summary>Android me muestra una advertencia, ¿es normal?</summary><p>Sí, pasa con cualquier app instalada fuera de Play Store. Permite la instalación solo para este archivo y desactiva el permiso al terminar.</p></details>
+        <details><summary>¿Cómo sé que el archivo es original?</summary><p>Calcula el SHA-256 de lo que descargaste y compáralo con el código de esta página. Deben ser idénticos.</p></details>
+        <details><summary>¿Qué versión de Android necesito?</summary><p>Android 8.0 o superior.</p></details>
+      </div>
+    </section>
+
+    <section class="block trust">
+      <div class="reveal"><b>Conexión cifrada</b><span>Todo viaja por HTTPS.</span></div>
+      <div class="reveal"><b>Archivo verificable</b><span>Código SHA-256 público.</span></div>
+      <div class="reveal"><b>Sin rastreadores</b><span>Sin cuentas, formularios ni cookies.</span></div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Rey App. Instala solo desde este enlace oficial.</footer>
+</div>
+
+<a class="fab" id="fab" href="apks/rey-app.apk" download>Descargar APK</a>
+<div class="lb" id="lb" hidden><img id="lbimg" alt=""></div>
+</body>
+</html>
